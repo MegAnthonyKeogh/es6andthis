@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bill calculator + es6</h1>
+
+    <script>
+    
+    function billCalculator (total, tax = 0.07, tip = 0.2){
+        return  total + (total *tax) + (total * tip);
+
+    };
+
+    const  totalBill = billCalculator(100);
+    console.log(totalBill);
+    
+    
+    </script>
+</body>
+</html>
