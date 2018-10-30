@@ -34,6 +34,25 @@
             console.log(cut)
         }
         //for of loops are great because you can break, add code to them, easy to follow syntax
+        
+        
+        // you can't iterate over an object using for of, and object.entries() isn't available yet. Use for in with objects. 
+    const apple = {
+        color: 'Red',
+        size: "Medium",
+        weight: 50,
+        sugar: 10
+    };
+
+    // for (const prop of Object.keys(apple)){
+    //     const value = apple[prop];
+    //     console.log(value, prop);
+    // }
+
+    for (const prop in apple){
+        const value = apple[prop];
+        console.log(value, prop);
+    }
     
     </script>
     
