@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<title> Iterables and Looping </title>
+    <script>
+
+        const cuts = [ 'Chuck', 'Brisket', 'Shank', 'Short Rib'];
+
+
+        //hard syntax to follow with beginners
+        for (let i = 0; i < cuts.length; i++){
+            console.log(cuts[i]+ "for loop");
+        }
+        //can't break after a certain point must finish
+        cuts.forEach((cut) => {
+            console.log(cut + "for each");
+            }
+        );
+
+        for (const index in cuts ){
+            console.log(cuts[index]);
+        } //if anyone messes with the prototype, it will affect this loop. 
+
+        for (const cut of cuts) {
+            if (cut === 'Brisket'){
+                break; //or you can use continue
+            }
+            console.log(cut)
+        }
+        //for of loops are great because you can break, add code to them, easy to follow syntax
+    
+    </script>
+    
+</body>
+</html>
