@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ...values lets you use 'the rest' of the values without know exactly how many there are. it's call the rest operator 
+        function highlight (strings, ...values) {
+            let str = '';
+            strings.forEach((string, i ) => {
+                str += string + (values[i] || ''); 
+                
+            });
+            return str;
+        }
+       const name = 'snickers';
+       const age = 100;
+       const sentence = highlight` My dog's name is ${name} and he is ${age} years old `;
+
+       console.log(sentence)
+   
+    </script>
+</body>
+
+</html>
